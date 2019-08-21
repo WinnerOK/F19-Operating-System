@@ -1,0 +1,25 @@
+    1  ./ex3.sh 
+    2  touch main.c
+    3  ls /usr/bin
+    4  ls /usr/bin | sort -r
+    5  ls /usr/bin | sort -r > ex1.txt
+    6  cat ex1.txt 
+    7  history
+    8  whoami
+    9  pwd
+   10  history
+   11  history > ex2.txt 
+   12  gcc main.c -o ex4
+   13  ./ex4 
+   14  history > ex2.txt 
+   15  ls /usr/bin | grep gcc
+   16  ./ex3.sh 
+   17  man date
+   18  ./ex3.sh 
+   19  ls /usr/bin |grep gcc > ex1.txt 
+   20  cat ex1.txt 
+   21  ls /usr/bin |grep gcc | sort -r > ex1.txt 
+   22  cat ex1.txt 
+   23  history
+   24  history 
+   25  history > ex2.txt 
