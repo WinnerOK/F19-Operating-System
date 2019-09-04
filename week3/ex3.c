@@ -21,8 +21,9 @@ void delete_node(List *list, int index);
 
 void print_list(List *list);
 
-Node *getNode(List *list, int index);
+void free_list(List *list);
 
+Node *getNode(List *list, int index);
 
 int main() {
     List *list = malloc(sizeof(List));
@@ -33,10 +34,11 @@ int main() {
     insert_node(list, 7, -1);
 
     delete_node(list, 0);
+    delete_node(list, -1);
 
     print_list(list);
 
-    free_list(list),
+    free_list(list);
     free(list);
     return 0;
 }
@@ -114,10 +116,10 @@ void print_list(List *list) {
     printf("\n");
 }
 
-void free_list(List *list){
+void free_list(List *list) {
     Node *cur = list->head;
-    while (cur != NULL){
-        next = cur->next;
+    while (cur != NULL) {
+        Node *next = cur->next;
         free(cur);
         cur = next;
     }

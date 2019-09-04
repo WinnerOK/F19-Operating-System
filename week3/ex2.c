@@ -6,12 +6,12 @@ void swap(int *a, int *b) {
     *b = c;
 }
 
-void bubble_sort(int *a, int n) {
+void bubble_sort(int *a, int n, int (*cmp)(int, int)) {
     int correct;
     do {
         correct = 0;
         for (int i = 1; i < n; ++i) {
-            if (a[i - 1] > a[i]) {
+            if (cmp(a[i - 1], a[i])) {
                 swap(&a[i - 1], &a[i]);
                 correct = i;
             }
@@ -20,10 +20,16 @@ void bubble_sort(int *a, int n) {
     } while (n > 1);
 }
 
+int cmp(int a, int b) {
+    // a > b - ascending order
+    // a < b - descending order
+    return a > b;
+}
+
 int main() {
     const int N = 4;
-    int a[]= {1,6,3,4, -5};
-    bubble_sort(a, N);
+    int a[] = {1, 6, 3, 4, -5};
+    bubble_sort(a, N, cmp);
     for (int i = 0; i < N; ++i) {
         printf("%d ", a[i]);
     }
