@@ -11,7 +11,6 @@ do
 		next_line=$((last_line+1))
 		echo "$next_line" >> "$input"
 		echo "written $next_line"
-		i=$((i+1))
 		rm "$input.lock"
 	fi
 done
