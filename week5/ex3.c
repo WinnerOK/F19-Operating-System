@@ -5,7 +5,8 @@
 #include <time.h>
 
 #define MAX_COUNT 2
-#define CUT 50000*6
+//#define CUT 50000*6
+#define CUT 10
 int count = 0;
 
 int consumer_sleep = 0;
