@@ -40,7 +40,7 @@ int main(void) {
 
         sleep(2);
         kill(received_pid, SIGKILL);
-        puts("Child2: sent SIGKILL to child2");
+        puts("Child1: sent SIGKILL to child2");
 
     } else {
         int child2_pid = fork();
@@ -80,7 +80,7 @@ Child1: sent SIGSTOP to child2
 Child1: sent SIGCONT to child2
 	 Child 2 is alive
 	 Child 2 is alive
-Child2: sent SIGKILL to child2
+Child1: sent SIGKILL to child2
 Parent: child2 changed state (exit code - 9 [killed])
 
  According to https://en.wikipedia.org/wiki/Signal_(IPC)#POSIX_signals SIGSTOP signal does not arrives to the process.
