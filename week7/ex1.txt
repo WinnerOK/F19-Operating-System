@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   3315	    696	      8	   4019	    fb3	ex1.out
