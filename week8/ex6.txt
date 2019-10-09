@@ -1,0 +1,2 @@
+2^16 possible addresses
+2^16 / (8*1024) = 8 pages -> 8 entries in single-level linear page table

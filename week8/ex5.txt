@@ -1,0 +1,2 @@
+Virtual address can be whatever big since virtual memory is infinitely large for a process.
+Physical address is limited by the actual size of memory.

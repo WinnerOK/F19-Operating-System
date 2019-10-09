@@ -1,0 +1,19 @@
+top - 14:57:29 up 32 min,  1 user,  load average: 3.91, 8.83, 6,05
+Tasks: 290 total,   1 running, 247 sleeping,   0 stopped,   0 zombie
+%Cpu(s):   8,5/3,9    12[|||||||||||||                                                                                       ]
+KiB Mem : 12158612 total,  105341126 free,  1897196 used,   514161 buff/cache
+KiB Swap:  5999996 total,  5382197 free,  617799 used.  10752468 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                          
+ 5820 daniil    20   0 24023 164252   821 R  67,2  1,1   0:00.11 ex2                                                              
+
+
+top - 14:57:34 up 32 min,  1 user,  load average: 4,02, 9,91, 6,46
+Tasks: 301 total,   1 running, 250 sleeping,   0 stopped,   0 zombie
+%Cpu(s):   8,5/3,9    12[|||||||||||||                                                                                       ]
+KiB Mem : 12158612 total,  9636144 free,  1897196 used,   625272 buff/cache
+KiB Swap:  5999996 total,  3979132 free,  2020864 used.  9881052 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                          
+ 5820 daniil    20   0 1028508 386304   1096 R  88,2  3,2   0:00.16 ex2                                                              
+
