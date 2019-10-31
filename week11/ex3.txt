@@ -1,0 +1,18 @@
+Output of 1st program
+Hello
+Hello
+
+Output of 2nd program
+Hello
+
+
+The difference between programs' source code is that 1st prints "Hello" with \n, second - without.
+First one outputs "Hello" 2 times (1 by parent, 1 by child) and 1 empty string.
+Second outputs "Hello" 1 time.
+
+What happens is that in 1st program output buffer do not flush for child, therefore it prints "Hello\n"
+In the second code buffer flushes. So we can conclude that stdout is line-buffered: after fork, stdout's buffer still contain "Hello", and both: child and parent will print it with "\n".
+
+Such conclusion is arises if execute the code similar to ex2, but remove intermediate sleeps. The string will be printed only after sleep since a clock interrupt flushing stdout buffer will happen by that time
+
+
